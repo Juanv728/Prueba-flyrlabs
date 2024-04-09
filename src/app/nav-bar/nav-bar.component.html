@@ -1,1 +1,19 @@
-<p>nav-bar works!</p>
+<header #header>
+    <button #navResponsive class="menu"><img #menuImg src="" alt="Menu open"></button>
+    <figure class="logo"><img src="" alt="Logo Airline"></figure>
+    <nav #menu>
+        <ul>
+            <li>Check-in</li>
+            <li>Manage my booking</li>
+            <li #subBtn id="info"> Information
+                <ul #subMenu class="sub-info">
+                    <li>Help center</li>
+                    <li>Flight state</li>
+                    <li>Airplanes</li>
+                    <li>Routes</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <figure class="lang"><img src="" alt="Languages"><caption> English</caption></figure>
+</header>
