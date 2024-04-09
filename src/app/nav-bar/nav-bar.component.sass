@@ -75,3 +75,83 @@ header
         left: 0
         transition: .3s all ease-in
         
+@media screen and (min-width:1359px)
+
+    header
+        padding: 10px 8% 
+        height: auto
+        position: static
+
+        .menu
+            display: none
+
+        .logo
+            width: 180px
+            display: flex
+            justify-content: center
+            align-items: center
+
+        nav
+            position: static
+            width: 90%
+            height: auto
+            background-color: inherit
+            padding: 0 0 0 60px
+
+            ul
+                flex-direction: row
+                gap: 30px
+
+                li
+                    display: inline-block
+                    padding: 20px 0
+                    border: none
+                    font-size: 1.2rem
+
+                li:last-child
+                    border: none
+                    position: relative
+
+                    .sub-info
+                        display: none
+
+                li:last-child:hover
+                    .sub-info,.sub-info:hover
+                        display: flex
+                        width: 180%
+                        padding: 15px
+                        flex-direction: column
+                        position: absolute
+                        top: 100%
+                        left: 50%
+                        transform: translateX(-50%)
+                        background-color: #fff
+                        border-radius: 15px
+                        box-shadow: 0 0 10px #555
+                        gap: 0
+
+                        li
+                            font-size: .8rem
+                            padding: 10px 0
+
+                    .sub-info:before
+                        content: ''
+                        border-top: none
+                        border-left: 12px solid transparent
+                        border-right: 12px solid transparent
+                        border-bottom: 10px solid #fff
+                        position: absolute
+                        left: 50%
+                        transform: translateX(-50%)
+                        top: -10px
+
+
+        .lang
+            width: 95px
+            display: flex
+            justify-content: center
+            align-items: center
+
+            caption
+                display: inline-block
+                padding: 0 0 0 10px
