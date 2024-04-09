@@ -1,11 +1,11 @@
 <header #header>
-    <button #navResponsive class="menu"><img #menuImg src="../../assets/responsive-menu-open.png" alt="Menu open"></button>
+    <button #navResponsive class="menu" (click)="cambio()"><img #menuImg src="../../assets/responsive-menu-open.png" alt="Menu open"></button>
     <figure class="logo"><img src="../../assets/logo.svg" alt="Logo Airline"></figure>
     <nav #menu>
         <ul>
             <li>Check-in</li>
             <li>Manage my booking</li>
-            <li #subBtn id="info"> Information
+            <li #subBtn id="info" (click)="mostrarMenu()"> Information
                 <ul #subMenu class="sub-info">
                     <li>Help center</li>
                     <li>Flight state</li>
